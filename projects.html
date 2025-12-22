@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naren Moorthy | Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-hero {
+            text-align: center;
+            padding: 150px 10% 80px;
+            background: radial-gradient(circle at center, #1a1c22 0%, var(--bg-dark) 70%);
+        }
+        
+        .complexity-meter {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            font-size: 0.75rem;
+            color: var(--text-gray);
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .meter-bar {
+            flex: 1;
+            height: 4px;
+            background: #333;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .meter-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent), var(--accent-purple));
+            box-shadow: 0 0 10px var(--accent);
+        }
+        
+        .card-icon {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand">NAREN <span>MOORTHY</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Exp & Certs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="project-hero reveal">
+        <h1 class="page-title" style="margin-bottom: 10px;">Featured <span style="color:var(--accent)">Projects</span></h1>
+        <p style="color:var(--text-gray); max-width: 600px; margin: 0 auto;">
+            A collection of my work bridging <strong>Artificial Intelligence</strong>, <strong>Cybersecurity</strong>, <strong>Full Stack Engineering</strong>, and <strong>Computer vision</strong>.
+        </p>
+    </section>
+
+    <div class="container" style="padding-top: 20px;">
+        <div class="project-grid">
+
+            <div class="card reveal">
+                <div class="complexity-meter">
+                    <span>Complexity</span>
+                    <div class="meter-bar"><div class="meter-fill" style="width: 95%"></div></div>
+                </div>
+                <i class="fas fa-route card-icon"></i>
+                <h3>Drone Route Optimization</h3>
+                <p>
+                    A real-time routing engine handling static and moving obstacles. Used <strong>Quad Trees</strong> for spatial indexing and <strong>Min-Heap A*</strong> for pathfinding. Reduced battery usage by 18%.
+                </p>
+                <div class="tech-stack">
+                    <span class="tag">C++</span>
+                    <span class="tag">DSA</span>
+                    <span class="tag">Quad Trees</span>
+                    <span class="tag">A* Algo</span>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/Naren-bit" target="_blank"><i class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <div class="complexity-meter">
+                    <span>Complexity</span>
+                    <div class="meter-bar"><div class="meter-fill" style="width: 90%"></div></div>
+                </div>
+                <i class="fas fa-shield-virus card-icon" style="color: var(--accent-purple)"></i>
+                <h3>Heimdall - DDoS Detection</h3>
+                <p>
+                    High-performance packet sniffer using <strong>Scapy</strong> and <strong>FastAPI</strong>. Features a "Hybrid Mode" engine to distinguish legitimate traffic from high-velocity DDoS attacks in real-time.
+                </p>
+                <div class="tech-stack">
+                    <span class="tag">Python</span>
+                    <span class="tag">Scapy</span>
+                    <span class="tag">Linux</span>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/Naren-bit" target="_blank"><i class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <div class="complexity-meter">
+                    <span>Complexity</span>
+                    <div class="meter-bar"><div class="meter-fill" style="width: 85%"></div></div>
+                </div>
+                <i class="fas fa-hand-paper card-icon"></i>
+                <h3>AirCursor - Vision Transformer</h3>
+                <p>
+                    Touchless cursor control system using a fine-tuned <strong>ViT-Base</strong> model. Achieved 98% accuracy with <35ms latency, outperforming traditional CNN approaches.
+                </p>
+                <div class="tech-stack">
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">ViT</span>
+                    <span class="tag">OpenCV</span>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/Naren-bit" target="_blank"><i class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <div class="complexity-meter">
+                    <span>Complexity</span>
+                    <div class="meter-bar"><div class="meter-fill" style="width: 80%"></div></div>
+                </div>
+                <i class="fas fa-cubes card-icon" style="color: var(--accent-purple)"></i>
+                <h3>Frozen Food Traceability</h3>
+                <p>
+                    Decentralized supply chain platform on <strong>Ethereum Sepolia</strong>. Uses Smart Contracts to record temperature and location data, preventing data tampering.
+                </p>
+                <div class="tech-stack">
+                    <span class="tag">Solidity</span>
+                    <span class="tag">Web3.js</span>
+                    <span class="tag">Ethereum</span>
+                    <span class="tag">React</span>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/Naren-bit" target="_blank"><i class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <div class="complexity-meter">
+                    <span>Impact</span>
+                    <div class="meter-bar"><div class="meter-fill" style="width: 100%; background: #ff4444; box-shadow: 0 0 10px #ff4444;"></div></div>
+                </div>
+                <i class="fas fa-bug card-icon" style="color: #ff4444"></i>
+                <h3>Shopify Bug Bounty Report</h3>
+                <p>
+                    Conducted a security audit on a live e-commerce site. Identified and reported a critical <strong>Open Redirect</strong> vulnerability that could lead to phishing attacks.
+                </p>
+                <div class="tech-stack">
+                    <span class="tag">Burp Suite</span>
+                    <span class="tag">HTTP Analysis</span>
+                    <span class="tag">OWASP Top 10</span>
+                </div>
+                <div class="links">
+                    <span style="font-size: 0.8rem; color: #888;">Confidential Report</span>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <div class="complexity-meter">
+                    <span>Complexity</span>
+                    <div class="meter-bar"><div class="meter-fill" style="width: 70%"></div></div>
+                </div>
+                <i class="fas fa-shopping-cart card-icon"></i>
+                <h3>Gavnn E-Commerce Template</h3>
+                <p>
+                    A full-featured backend template for high-traffic stores. Implemented secure authentication, product indexing, and responsive UI.
+                </p>
+                <div class="tech-stack">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Express</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">CSS3</span>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/Naren-bit" target="_blank"><i class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 60px;" class="reveal">
+            <a href="https://github.com/Naren-bit" target="_blank" class="btn btn-outline">
+                See More on GitHub <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

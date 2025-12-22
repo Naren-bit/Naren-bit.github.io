@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naren Moorthy | Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .exp-hero {
+            text-align: center;
+            padding: 150px 10% 80px;
+            background: radial-gradient(circle at center, #1a1c22 0%, var(--bg-dark) 70%);
+            position: relative;
+        }
+
+        .job-card {
+            background: #15161a;
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 60px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            transition: 0.3s;
+        }
+        
+        .job-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 0 30px rgba(0,0,0,0.4);
+        }
+
+        .job-card::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 5px;
+            background: var(--accent);
+            box-shadow: 0 0 15px var(--accent);
+        }
+
+        .company-logo-box {
+            width: 80px; height: 80px;
+            background: #222;
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2.5rem; color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .job-details h3 { font-family: 'Inter'; font-size: 1.8rem; margin-bottom: 5px; }
+        .job-details h4 { color: var(--accent); font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; }
+        
+        .task-list li {
+            margin-bottom: 10px;
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            display: flex; align-items: flex-start;
+            gap: 10px;
+        }
+        .task-list li i { color: var(--accent-purple); margin-top: 5px; }
+
+        .certs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .cert-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.05);
+            display: flex; align-items: center; gap: 20px;
+            transition: 0.3s;
+        }
+
+        .cert-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--accent);
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.1);
+        }
+
+        @media(max-width: 768px) {
+            .job-card { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand">NAREN <span>MOORTHY</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html" class="active">Exp & Certs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="exp-hero reveal">
+        <h1 class="page-title">Professional <span style="color:var(--accent)">Experience</span></h1>
+        <p style="color:var(--text-gray);">Deploying skills in real-world environments.</p>
+    </section>
+
+    <div class="container" style="padding-top: 60px;">
+
+        <div class="reveal">
+            <h2 style="font-family:'Inter'; margin-bottom:30px; border-bottom:1px solid #333; padding-bottom:10px; display:inline-block;">
+                Work History
+            </h2>
+            
+            <div class="job-card">
+                <div class="company-logo-box">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="job-details">
+                    <h3>Web Application Hacking Intern</h3>
+                    <h4>NullClass | Krishnagiri (Remote)</h4>
+                    <p style="color:#888; font-style:italic; margin-bottom:20px;">May 2024 - June 2024</p>
+                    
+                    <ul class="task-list">
+                        <li><i class="fas fa-check-circle"></i> Successfully identified and reported a critical <strong>Open Redirect vulnerability.</strong></li>
+                        <li><i class="fas fa-check-circle"></i> Performed <strong>vulnerability assessments</strong> and manipulated HTTP traffic to find hidden directories.</li>
+                        <li><i class="fas fa-check-circle"></i> Applied <strong>OWASP Top 10</strong> principles in real-world bug bounty and CTF-style tasks.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal" style="margin-top: 80px;">
+            <h2 style="font-family:'Inter'; margin-bottom:30px; border-bottom:1px solid #333; padding-bottom:10px; display:inline-block;">
+                Certifications & Licenses
+            </h2>
+
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <i class="fab fa-google" style="font-size: 2.5rem; color: #fff;"></i>
+                    <div>
+                        <h4 style="font-weight:700; color:#fff;">Foundations Of CyberSecurity</h4>
+                        <p style="font-size:0.85rem; color:var(--accent);">Google CyberSecurity Professional Certficate</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: var(--accent-purple);"></i>
+                    <div>
+                        <h4 style="font-weight:700; color:#fff;">Complete Cybersecurity Vol.1</h4>
+                        <p style="font-size:0.85rem; color:var(--accent);">StationX - Encryption & Malware</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
