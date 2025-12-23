@@ -15,7 +15,7 @@ I am a **Pre-Final Year B.Tech CSE Student** at **Amrita Vishwa Vidyapeetham** b
 
 My workflow follows the **Builder-Breaker Methodology**: I architect robust MERN stack applications, build intelligent Computer Vision models, and then stress-test them using industry-standard penetration testing tools.
 
-* **🎓 CGPA:** 8.41 / 10.0
+* **🎓 CGPA:** 8.57 / 10.0
 * **🔭 Currently Working on:** Secure Camera & Network Analytics (Final Year Project)
 * **🌱 Learning:** Advanced Malware Analysis & Cloud Security
 
