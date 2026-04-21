@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naren Moorthy | Projects</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
@@ -13,7 +16,7 @@
             padding: 150px 10% 80px;
             background: radial-gradient(circle at center, #1a1c22 0%, var(--bg-dark) 70%);
         }
-        
+
         .complexity-meter {
             display: flex;
             align-items: center;
@@ -39,7 +42,7 @@
             background: linear-gradient(90deg, var(--accent), var(--accent-purple));
             box-shadow: 0 0 10px var(--accent);
         }
-        
+
         .card-icon {
             font-size: 1.5rem;
             color: var(--accent);
@@ -48,6 +51,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <header>
@@ -62,9 +66,11 @@
     </header>
 
     <section class="project-hero reveal">
-        <h1 class="page-title" style="margin-bottom: 10px;">Featured <span style="color:var(--accent)">Projects</span></h1>
+        <h1 class="page-title" style="margin-bottom: 10px;">Featured <span style="color:var(--accent)">Projects</span>
+        </h1>
         <p style="color:var(--text-gray); max-width: 600px; margin: 0 auto;">
-            A collection of my work bridging <strong>Artificial Intelligence</strong>, <strong>Cybersecurity</strong>, <strong>Full Stack Engineering</strong>, and <strong>Computer vision</strong>.
+            A collection of my work bridging <strong>Artificial Intelligence</strong>, <strong>Cybersecurity</strong>,
+            <strong>Full Stack Engineering</strong>, and <strong>Computer Vision</strong>.
         </p>
     </section>
 
@@ -74,12 +80,40 @@
             <div class="card reveal">
                 <div class="complexity-meter">
                     <span>Complexity</span>
-                    <div class="meter-bar"><div class="meter-fill" style="width: 95%"></div></div>
+                    <div class="meter-bar">
+                        <div class="meter-fill" style="width: 98%"></div>
+                    </div>
+                </div>
+                <i class="fas fa-fingerprint card-icon"></i>
+                <h3>DeepVerify: Zero-Trust Gateway (Ongoing)</h3>
+                <p>
+                    A multi-modal forensic engine eliminating interview fraud by fusing <strong>PRNU
+                        fingerprinting</strong>, <strong>rPPG (pulse detection)</strong>, and gaze tracking to detect
+                    deepfakes in real-time.
+                </p>
+                <div class="tech-stack">
+                    <span class="tag">Python</span>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">Scapy</span>
+                    <span class="tag">MediaPipe</span>
+                </div>
+                <div class="links">
+                    <span style="font-size: 0.8rem; color: #888;">Ongoing Project</span>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <div class="complexity-meter">
+                    <span>Complexity</span>
+                    <div class="meter-bar">
+                        <div class="meter-fill" style="width: 95%"></div>
+                    </div>
                 </div>
                 <i class="fas fa-route card-icon"></i>
                 <h3>Drone Route Optimization</h3>
                 <p>
-                    A real-time routing engine handling static and moving obstacles. Used <strong>Quad Trees</strong> for spatial indexing and <strong>Min-Heap A*</strong> for pathfinding. Reduced battery usage by 18%.
+                    A real-time routing engine handling static and moving obstacles. Used <strong>Quad Trees</strong>
+                    for spatial indexing and <strong>Min-Heap A*</strong> for pathfinding. Reduced battery usage by 18%.
                 </p>
                 <div class="tech-stack">
                     <span class="tag">C++</span>
@@ -88,6 +122,84 @@
                     <span class="tag">A* Algo</span>
                 </div>
                 <div class="links">
+                    <a href="https://github.com/Naren-bit/Route-Optimization-for-Drones" target="_blank"><i
+                            class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <div class="complexity-meter">
+                    <span>Complexity</span>
+                    <div class="meter-bar">
+                        <div class="meter-fill" style="width: 94%"></div>
+                    </div>
+                </div>
+                <i class="fas fa-file-invoice-dollar card-icon" style="color: #4ecdc4"></i>
+                <h3>Finance Dashboard Backend</h3>
+                <p>
+                    A full-stack financial engine featuring <strong>JWT Refresh Token Rotation</strong> and
+                    <strong>RBAC</strong>. Implements real-time analytics, transaction soft-deletes, and Zod-validated
+                    data pipelines for secure asset tracking.
+                </p>
+                <div class="tech-stack">
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">Prisma</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">JWT Auth</span>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/Naren-bit/Finance-Data-Processing-and-Access-Control-Backend"
+                        target="_blank"><i class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <div class="complexity-meter">
+                    <span>Complexity</span>
+                    <div class="meter-bar">
+                        <div class="meter-fill" style="width: 96%"></div>
+                    </div>
+                </div>
+                <i class="fas fa-stadium card-icon" style="color: var(--accent)"></i>
+                <h3>VenueIQ - Smart Stadium AI</h3>
+                <p>
+                    AI-powered real-time crowd intelligence system. Uses <strong>Gemini 2.0 Flash</strong> and
+                    <strong>Socket.IO</strong> to provide section-aware walk-time estimates and multimodal vision for
+                    automated queue density analysis.
+                </p>
+                <div class="tech-stack">
+                    <span class="tag">Gemini AI</span>
+                    <span class="tag">Socket.IO</span>
+                    <span class="tag">PWA</span>
+                    <span class="tag">Firebase</span>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/Naren-bit/VenueIQ" target="_blank"><i class="fab fa-github"></i>
+                        Code</a>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <div class="complexity-meter">
+                    <span>Complexity</span>
+                    <div class="meter-bar">
+                        <div class="meter-fill" style="width: 92%"></div>
+                    </div>
+                </div>
+                <i class="fas fa-code-branch card-icon" style="color: var(--accent-purple)"></i>
+                <h3>AI-Driven Code Analysis</h3>
+                <p>
+                    Hybrid static analysis tool for semiconductor testing APIs. Combines <strong>Rule-based
+                        heuristics</strong> with <strong>LLMs (Llama 3/Groq)</strong> and <strong>Vector RAG</strong> to
+                    detect domain-specific C++ bugs.
+                </p>
+                <div class="tech-stack">
+                    <span class="tag">Python</span>
+                    <span class="tag">LLMs</span>
+                    <span class="tag">LlamaIndex</span>
+                    <span class="tag">RAG</span>
+                </div>
+                <div class="links">
                     <a href="https://github.com/Naren-bit" target="_blank"><i class="fab fa-github"></i> Code</a>
                 </div>
             </div>
@@ -95,103 +207,199 @@
             <div class="card reveal">
                 <div class="complexity-meter">
                     <span>Complexity</span>
-                    <div class="meter-bar"><div class="meter-fill" style="width: 90%"></div></div>
+                    <div class="meter-bar">
+                        <div class="meter-fill"
+                            style="width: 85%; background: var(--accent-purple); box-shadow: 0 0 10px var(--accent-purple);">
+                        </div>
+                    </div>
+                </div>
+                <i class="fas fa-cubes card-icon" style="color: var(--accent-purple)"></i>
+                <h3>Supply Chain Traceability</h3>
+                <p>
+                    Blockchain-backed platform recording frozen food batches on <strong>Ethereum Sepolia</strong>.
+                    Designed <strong>Solidity</strong> smart contracts for transfers and recall logic, integrating
+                    <strong>Web3.js</strong> for front-end verification to prevent data tampering.
+                </p>
+                <div class="tech-stack">
+                    <span class="tag">Solidity</span>
+                    <span class="tag">Ethereum</span>
+                    <span class="tag">Web3.js</span>
+                    <span class="tag">Smart Contracts</span>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/Naren-bit/RichProducts-SupplyChain" target="_blank"><i
+                            class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <div class="complexity-meter">
+                    <span>Complexity</span>
+                    <div class="meter-bar">
+                        <div class="meter-fill" style="width: 90%"></div>
+                    </div>
                 </div>
                 <i class="fas fa-shield-virus card-icon" style="color: var(--accent-purple)"></i>
                 <h3>Heimdall - DDoS Detection</h3>
                 <p>
-                    High-performance packet sniffer using <strong>Scapy</strong> and <strong>FastAPI</strong>. Features a "Hybrid Mode" engine to distinguish legitimate traffic from high-velocity DDoS attacks in real-time.
+                    High-performance packet sniffer using <strong>Scapy</strong>. Employs multi-threaded architecture to
+                    decouple capture from analysis, distinguishing high-velocity DDoS patterns from legit traffic.
                 </p>
                 <div class="tech-stack">
                     <span class="tag">Python</span>
                     <span class="tag">Scapy</span>
+                    <span class="tag">WebSockets</span>
                     <span class="tag">Linux</span>
                 </div>
                 <div class="links">
-                    <a href="https://github.com/Naren-bit" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    <a href="https://github.com/Naren-bit/Heimdall-DDOS-The-Autonomous-Network-Intrusion-Detction-Active-Defense-System"
+                        target="_blank"><i class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <div class="complexity-meter">
+                    <span>Scientific Rigor</span>
+                    <div class="meter-bar">
+                        <div class="meter-fill" style="width: 88%; background: #4ecdc4;"></div>
+                    </div>
+                </div>
+                <i class="fas fa-water card-icon" style="color: #4ecdc4"></i>
+                <h3>Ocean Depth Estimation</h3>
+                <p>
+                    Researching Satellite-Derived Bathymetry (SDB) using <strong>Sentinel-2 multispectral
+                        imagery</strong>. Implemented polynomial regression to achieve $R^2$ values of **0.877**.
+                </p>
+                <div class="tech-stack">
+                    <span class="tag">Research</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Regression</span>
+                    <span class="tag">GIS</span>
+                </div>
+                <div class="links">
+                    <span style="font-size: 0.8rem; color: #888;">Ongoing Research</span>
                 </div>
             </div>
 
             <div class="card reveal">
                 <div class="complexity-meter">
                     <span>Complexity</span>
-                    <div class="meter-bar"><div class="meter-fill" style="width: 85%"></div></div>
+                    <div class="meter-bar">
+                        <div class="meter-fill" style="width: 88%"></div>
+                    </div>
+                </div>
+                <i class="fas fa-briefcase card-icon"></i>
+                <h3>CareerForge: AI Placement</h3>
+                <p>
+                    An AI interview system using <strong>Groq API</strong> and <strong>Gemini</strong>. Features an
+                    Agentic AI Headhunter module and predictive gap analysis for student career roadmaps.
+                </p>
+                <div class="tech-stack">
+                    <span class="tag">Next.js</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">Groq</span>
+                    <span class="tag">Docker</span>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/Sariga-2005/CareerForge" target="_blank"><i class="fab fa-github"></i>
+                        Code</a>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <div class="complexity-meter">
+                    <span>Complexity</span>
+                    <div class="meter-bar">
+                        <div class="meter-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+                <i class="fas fa-vault card-icon"></i>
+                <h3>SkillVault: Time Banking</h3>
+                <p>
+                    Peer-to-peer skill sharing using <strong>WebRTC</strong> and <strong>Socket.IO</strong>. Implemented
+                    optimistic locking and state machines to ensure atomic credit transfers.
+                </p>
+                <div class="tech-stack">
+                    <span class="tag">MERN Stack</span>
+                    <span class="tag">WebRTC</span>
+                    <span class="tag">Gemini AI</span>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/RKSAKETH/SkillVaultFrontend" target="_blank"><i
+                            class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <div class="complexity-meter">
+                    <span>Compliance</span>
+                    <div class="meter-bar">
+                        <div class="meter-fill" style="width: 90%; background: #ff9f43;"></div>
+                    </div>
+                </div>
+                <i class="fas fa-hospital-user card-icon" style="color: #ff9f43"></i>
+                <h3>SecureCare Plus (Health)</h3>
+                <p>
+                    HIPAA/GDPR compliant platform. Features <strong>RBAC</strong>, AI-driven security anomaly detection,
+                    and a patient-driven consent workflow with instant 403-blocking enforcement.
+                </p>
+                <div class="tech-stack">
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">Security</span>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/Tarika06/secure-healthcare-platform" target="_blank"><i
+                            class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <div class="complexity-meter">
+                    <span>Complexity</span>
+                    <div class="meter-bar">
+                        <div class="meter-fill" style="width: 85%"></div>
+                    </div>
                 </div>
                 <i class="fas fa-hand-paper card-icon"></i>
                 <h3>AirCursor - Vision Transformer</h3>
                 <p>
-                    Touchless cursor control system using a fine-tuned <strong>ViT-Base</strong> model. Achieved 98% accuracy with <35ms latency, outperforming traditional CNN approaches.
-                </p>
-                <div class="tech-stack">
-                    <span class="tag">PyTorch</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">ViT</span>
-                    <span class="tag">OpenCV</span>
-                </div>
-                <div class="links">
-                    <a href="https://github.com/Naren-bit" target="_blank"><i class="fab fa-github"></i> Code</a>
-                </div>
-            </div>
-
-            <div class="card reveal">
-                <div class="complexity-meter">
-                    <span>Complexity</span>
-                    <div class="meter-bar"><div class="meter-fill" style="width: 80%"></div></div>
-                </div>
-                <i class="fas fa-cubes card-icon" style="color: var(--accent-purple)"></i>
-                <h3>Frozen Food Traceability</h3>
-                <p>
-                    Decentralized supply chain platform on <strong>Ethereum Sepolia</strong>. Uses Smart Contracts to record temperature and location data, preventing data tampering.
-                </p>
-                <div class="tech-stack">
-                    <span class="tag">Solidity</span>
-                    <span class="tag">Web3.js</span>
-                    <span class="tag">Ethereum</span>
-                    <span class="tag">React</span>
-                </div>
-                <div class="links">
-                    <a href="https://github.com/Naren-bit" target="_blank"><i class="fab fa-github"></i> Code</a>
-                </div>
+                    Touchless cursor control system using a fine-tuned <strong>ViT-Base</strong> model. Achieved 98%
+                    accuracy with <35ms latency, outperforming traditional CNNs. </p>
+                        <div class="tech-stack">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">ViT</span>
+                            <span class="tag">OpenCV</span>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/Naren-bit/AirCursor-Gesture-Recognition-" target="_blank"><i
+                                    class="fab fa-github"></i>
+                                Code</a>
+                        </div>
             </div>
 
             <div class="card reveal">
                 <div class="complexity-meter">
                     <span>Impact</span>
-                    <div class="meter-bar"><div class="meter-fill" style="width: 100%; background: #ff4444; box-shadow: 0 0 10px #ff4444;"></div></div>
+                    <div class="meter-bar">
+                        <div class="meter-fill" style="width: 100%; background: #ff4444; box-shadow: 0 0 10px #ff4444;">
+                        </div>
+                    </div>
                 </div>
                 <i class="fas fa-bug card-icon" style="color: #ff4444"></i>
                 <h3>Shopify Bug Bounty Report</h3>
                 <p>
-                    Conducted a security audit on a live e-commerce site. Identified and reported a critical <strong>Open Redirect</strong> vulnerability that could lead to phishing attacks.
+                    Conducted a security audit on a live e-commerce site. Identified and reported a critical
+                    <strong>Open Redirect</strong> vulnerability via HTTP analysis.
                 </p>
                 <div class="tech-stack">
                     <span class="tag">Burp Suite</span>
-                    <span class="tag">HTTP Analysis</span>
-                    <span class="tag">OWASP Top 10</span>
+                    <span class="tag">OWASP</span>
+                    <span class="tag">Pentesting</span>
                 </div>
                 <div class="links">
                     <span style="font-size: 0.8rem; color: #888;">Confidential Report</span>
-                </div>
-            </div>
-
-            <div class="card reveal">
-                <div class="complexity-meter">
-                    <span>Complexity</span>
-                    <div class="meter-bar"><div class="meter-fill" style="width: 70%"></div></div>
-                </div>
-                <i class="fas fa-shopping-cart card-icon"></i>
-                <h3>Gavnn E-Commerce Template</h3>
-                <p>
-                    A full-featured backend template for high-traffic stores. Implemented secure authentication, product indexing, and responsive UI.
-                </p>
-                <div class="tech-stack">
-                    <span class="tag">Node.js</span>
-                    <span class="tag">Express</span>
-                    <span class="tag">MongoDB</span>
-                    <span class="tag">CSS3</span>
-                </div>
-                <div class="links">
-                    <a href="https://github.com/Naren-bit" target="_blank"><i class="fab fa-github"></i> Code</a>
                 </div>
             </div>
 
@@ -206,4 +414,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

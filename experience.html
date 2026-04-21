@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naren Moorthy | Experience</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
@@ -28,42 +31,63 @@
             align-items: flex-start;
             transition: 0.3s;
         }
-        
+
         .job-card:hover {
             transform: translateY(-5px);
             border-color: var(--accent);
-            box-shadow: 0 0 30px rgba(0,0,0,0.4);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
         }
 
         .job-card::before {
             content: '';
             position: absolute;
-            left: 0; top: 0; bottom: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
             width: 5px;
             background: var(--accent);
             box-shadow: 0 0 15px var(--accent);
         }
 
         .company-logo-box {
-            width: 80px; height: 80px;
+            width: 80px;
+            height: 80px;
             background: #222;
             border-radius: 10px;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 2.5rem; color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--accent);
             flex-shrink: 0;
         }
 
-        .job-details h3 { font-family: 'Inter'; font-size: 1.8rem; margin-bottom: 5px; }
-        .job-details h4 { color: var(--accent); font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; }
-        
+        .job-details h3 {
+            font-family: 'Inter';
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+
+        .job-details h4 {
+            color: var(--accent);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
         .task-list li {
             margin-bottom: 10px;
             color: var(--text-gray);
             font-size: 0.95rem;
-            display: flex; align-items: flex-start;
+            display: flex;
+            align-items: flex-start;
             gap: 10px;
         }
-        .task-list li i { color: var(--accent-purple); margin-top: 5px; }
+
+        .task-list li i {
+            color: var(--accent-purple);
+            margin-top: 5px;
+        }
 
         .certs-grid {
             display: grid;
@@ -75,8 +99,10 @@
             background: rgba(255, 255, 255, 0.03);
             padding: 25px;
             border-radius: 12px;
-            border: 1px solid rgba(255,255,255,0.05);
-            display: flex; align-items: center; gap: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 20px;
             transition: 0.3s;
         }
 
@@ -88,10 +114,13 @@
         }
 
         @media(max-width: 768px) {
-            .job-card { flex-direction: column; }
+            .job-card {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <header>
@@ -113,10 +142,11 @@
     <div class="container" style="padding-top: 60px;">
 
         <div class="reveal">
-            <h2 style="font-family:'Inter'; margin-bottom:30px; border-bottom:1px solid #333; padding-bottom:10px; display:inline-block;">
+            <h2
+                style="font-family:'Inter'; margin-bottom:30px; border-bottom:1px solid #333; padding-bottom:10px; display:inline-block;">
                 Work History
             </h2>
-            
+
             <div class="job-card">
                 <div class="company-logo-box">
                     <i class="fas fa-laptop-code"></i>
@@ -125,18 +155,44 @@
                     <h3>Web Application Hacking Intern</h3>
                     <h4>NullClass | Krishnagiri (Remote)</h4>
                     <p style="color:#888; font-style:italic; margin-bottom:20px;">May 2024 - June 2024</p>
-                    
+
                     <ul class="task-list">
-                        <li><i class="fas fa-check-circle"></i> Successfully identified and reported a critical <strong>Open Redirect vulnerability.</strong></li>
-                        <li><i class="fas fa-check-circle"></i> Performed <strong>vulnerability assessments</strong> and manipulated HTTP traffic to find hidden directories.</li>
-                        <li><i class="fas fa-check-circle"></i> Applied <strong>OWASP Top 10</strong> principles in real-world bug bounty and CTF-style tasks.</li>
+                        <li><i class="fas fa-check-circle"></i> Successfully identified and reported a critical
+                            <strong>Open Redirect vulnerability.</strong>
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> Performed <strong>vulnerability assessments</strong> and
+                            manipulated HTTP traffic to find hidden directories.</li>
+                        <li><i class="fas fa-check-circle"></i> Applied <strong>OWASP Top 10</strong> principles in
+                            real-world bug bounty and CTF-style tasks.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="reveal">
+            <h2
+                style="font-family:'Inter'; margin-bottom:30px; border-bottom:1px solid #333; padding-bottom:10px; display:inline-block;">
+                Work History
+            </h2>
+
+            <div class="job-card">
+                <div class="company-logo-box">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="job-details">
+                    <h3>Full Stack Engineer Intern</h3>
+                    <h4>MetatronCube Software Solutions | Toronto,Canada (Remote)</h4>
+                    <p style="color:#888; font-style:italic; margin-bottom:20px;">Feb 2026 (Present)</p>
+
+                    <ul class="task-list">
+                        <li><i class="fas fa-check-circle"></i> Currently Ongoing</li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="reveal" style="margin-top: 80px;">
-            <h2 style="font-family:'Inter'; margin-bottom:30px; border-bottom:1px solid #333; padding-bottom:10px; display:inline-block;">
+            <h2
+                style="font-family:'Inter'; margin-bottom:30px; border-bottom:1px solid #333; padding-bottom:10px; display:inline-block;">
                 Certifications & Licenses
             </h2>
 
@@ -145,7 +201,8 @@
                     <i class="fab fa-google" style="font-size: 2.5rem; color: #fff;"></i>
                     <div>
                         <h4 style="font-weight:700; color:#fff;">Foundations Of CyberSecurity</h4>
-                        <p style="font-size:0.85rem; color:var(--accent);">Google CyberSecurity Professional Certficate</p>
+                        <p style="font-size:0.85rem; color:var(--accent);">Google CyberSecurity Professional Certficate
+                        </p>
                     </div>
                 </div>
 
@@ -162,4 +219,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
